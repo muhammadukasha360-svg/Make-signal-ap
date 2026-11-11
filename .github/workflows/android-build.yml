@@ -30,6 +30,12 @@ jobs:
       - name: Grant Execute Permission to Gradlew
         run: chmod +x gradlew || true
 
+      - name: Decode Debug Keystore
+        run: |
+          if [ -f "debug.keystore.base64" ]; then
+            base64 -d debug.keystore.base64 > debug.keystore
+          fi
+
       - name: Run Local JVM Unit Tests
         run: ./gradlew :app:testDebugUnitTest --no-daemon --stacktrace
 
