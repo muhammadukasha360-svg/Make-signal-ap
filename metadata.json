@@ -1,0 +1,6 @@
+{
+  "name": "SignalX AI",
+  "description": "Professional crypto quantitative analysis and prediction engine with real-time exchange data, custom candlestick charts, indicators, and Urdu/English forecasts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
